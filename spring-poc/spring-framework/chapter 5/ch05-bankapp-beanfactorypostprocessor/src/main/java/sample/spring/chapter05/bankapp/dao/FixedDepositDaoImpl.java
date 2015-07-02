@@ -19,7 +19,7 @@ public class FixedDepositDaoImpl implements FixedDepositDao, InstanceValidator {
 	}
 
 	public void initializeDbConnection() {
-		logger.info("FixedDepositDaoImpl’s initializeDbConnection method invoked");
+		logger.info("FixedDepositDaoImpls initializeDbConnection method invoked");
 		connection = DatabaseConnection.getInstance();
 	}
 
@@ -30,7 +30,7 @@ public class FixedDepositDaoImpl implements FixedDepositDao, InstanceValidator {
 		fixedDepositDetails.setId(id);
 		fixedDepositDetails.setTenure(tenure);
 		
-		logger.info("FixedDepositDaoImpl’s createFixedDeposit method invoked");
+		logger.info("FixedDepositDaoImpls createFixedDeposit method invoked");
 		// -- save the fixed deposits and then return true
 		return true;
 	}

@@ -17,13 +17,13 @@ public class FixedDepositDaoImpl implements FixedDepositDao {
 
 	@PostConstruct
 	public void initializeDbConnection() {
-		logger.info("FixedDepositDaoImpl’s initializeDbConnection method invoked");
+		logger.info("FixedDepositDaoImpls initializeDbConnection method invoked");
 		connection = DatabaseConnection.getInstance();
 	}
 
 	
 	public boolean createFixedDeposit(FixedDepositDetails fdd) {
-		logger.info("FixedDepositDaoImpl’s createFixedDeposit method invoked");
+		logger.info("FixedDepositDaoImpls createFixedDeposit method invoked");
 		// -- save the fixed deposits and then return true
 		return true;
 	}
