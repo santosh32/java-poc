@@ -1,17 +1,16 @@
 package sample.spring.chapter04.bankapp;
 
-import org.apache.log4j.Logger;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import java.sql.Timestamp;
+import java.util.Date;
 
-import sample.spring.chapter04.bankapp.domain.FixedDepositDetails;
-import sample.spring.chapter04.bankapp.service.CustomerRequestService;
-import sample.spring.chapter04.bankapp.service.FixedDepositService;
+import org.apache.log4j.Logger;
 
 public class BankApp {
 	private static Logger logger = Logger.getLogger(BankApp.class);
 
 	public static void main(String args[]) throws Exception {
+		
+		 
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"classpath:META-INF/spring/applicationContext.xml");
 
